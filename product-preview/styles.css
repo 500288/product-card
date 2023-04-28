@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-size: 14px; 
+    background-color:   hsl(30, 38%, 92%);
+    font-family: Montserrat;
+}
+
+.card{
+
+    max-width: 335px;  
+    background-color: hsl(0, 0%, 100%); 
+    border-radius: 10px; 
+}
+
+.card-img{
+    content: url(Image/mobile\ image.jpg); 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 335px;
+}
+
+/* information */
+
+.info{
+    padding: 1px 20px 20px 20px;
+}
+
+.title{
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-size: 13px;
+    margin:20px 0px 20px 0px ;   
+}
+
+h1{
+    text-transform: capitalize;
+    color:  hsl(212, 21%, 14%);
+    font-family: Fraunces;
+    line-height: 30px;
+}
+
+p{
+    color: hsl(228, 12%, 48%);     
+}
+
+.price{
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-family: Fraunces;
+   font-size: 30px;
+}
+
+span{
+    color: hsl(228, 12%, 48%);
+    font-family:Montserrat ;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 10px;
+    position: relative;
+    top: -5px;
+}
+
+/* button */
+
+button{ 
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  hsl(0, 0%, 100%);
+    background-color:   hsl(158, 36%, 37%);
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover,
+button:focus{
+    background-color:   hsl(157, 35%, 19%);
+    cursor: pointer;
+}
+
+.but-text{
+    color:hsl(0, 0%, 100%) ;
+    margin-left: 10px;
+    font-family: Montserrat;
+}
+/* media query */
+@media screen and (min-width: 868px)
+{
+    .card{
+        display: flex;
+        flex-direction: row; 
+        max-width: 43%; 
+        border-radius: 10px;
+    }
+
+    .card-img{
+        content: url(./Image/desktop\ image.jpg); 
+        margin: auto;       
+        width: 50%; 
+        border: 0px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .title{
+        margin:30px 0px 20px 0px ; 
+    } 
+
+    h1{
+        font-size: 33px;
+        margin-top: -5px;
+    }
+
+    .info{
+        width: 50%;
+    }
+}
+    
